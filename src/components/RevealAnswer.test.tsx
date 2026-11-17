@@ -66,4 +66,12 @@ describe("Reveal Answer", () => {
         expect(toggleAnswerButton).toBeVisible();
     });
     //*/
+    // Click "Toggle Hint Visibility" button
+
+    test("There is a Toggle Hint Visibility button", () => {
+        const toggleHintButton = screen.getByRole("button", {
+            name: /Toggle Hint/i,
+        });
+        expect(toggleHintButton).toBeInTheDocument();
+    });
 });
